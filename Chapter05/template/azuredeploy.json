@@ -92,39 +92,17 @@
     },
     "firstVnetLocation": {
       "type": "string",
-      "defaultValue": "[resourceGroup().location]",
+      "defaultValue": "North Central US",
       "metadata": {
-        "description": "Location to deploy the CoreServices VNet into"
+        "description": "Location to deploy the AzureService VNet into"
       }
     },
     "secondVnetLocation": {
       "type": "string",
-      "defaultValue": "West US",
+      "defaultValue": "South Central US",
       "allowedValues": [
-        "East US",
-        "East US 2",
-        "South Central US",
-        "Central US",
-        "West US",
-        "Australia East",
-        "Southeast Asia",
-        "North Europe",
-        "West Europe",
-        "UK South",
-        "UK West",
-        "South Central US",
-        "South Africa North",
-        "Central India",
-        "East Asia",
-        "Japan East",
-        "Korea South",
-        "South India",
-        "West India",
-        "France South",
-        "Germany North",
-        "Central India",
-        "Norway West",
-        "UAE Central"
+        "North Central US",
+        "South Central US"
       ],
       "metadata": {
         "description": "Location to deploy the other VNets into"
@@ -132,7 +110,7 @@
     }
   },
   "variables": {
-    "Vnet-1-Name": "CoreServicesVnet",
+    "Vnet-1-Name": "AzureServiceVnet",
     "Vnet-2-Name": "onprem-network",
     "Vnet-3-Name": "remotepc-network",
     "GatewaySubnetName": "GatewaySubnet",
